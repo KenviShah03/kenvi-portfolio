@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kenvi Shah Portfolio</title>
+    <meta name="description" content="Portfolio of Kenvi Shah, Cybersecurity Specialist">
+    <meta name="keywords" content="Cybersecurity, Ethical Hacking, Risk Management, Kenvi Shah">
+    <meta name="author" content="Kenvi Shah">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            color: #333;
+        }
+        header {
+            background-color: #1565c0;
+            color: white;
+            padding: 2.5rem;
+            text-align: center;
+            border-bottom: 5px solid #0d47a1;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around; /* Adjust spacing */
+            padding: 0 2rem; /* Add padding to create space */
+            font-size: 1.2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.2rem 0.5rem;
+            background-color: #0d47a1;
+            border-radius: 5px;
+        }
+        .contact-info a:hover {
+            background-color: #003c8f;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .collapsible {
+            background-color: #f1f8ff;
+            color: #0d47a1;
+            cursor: pointer;
+            padding: 1rem;
+            text-align: left;
+            outline: none;
+            border: 1px solid #0d47a1;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s;
+        }
+        .collapsible:hover {
+            background-color: #e3f2fd;
+        }
+        .collapsible:after {
+            content: '+';
+            font-size: 1.2rem;
+            float: right;
+        }
+        .collapsible.active:after {
+            content: '−';
+        }
+        .collapsible-content {
+            display: none;
+            padding: 1rem;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-left: 5px solid #1565c0;
+            margin-bottom: 1rem;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const collapsibles = document.querySelectorAll('.collapsible');
+            collapsibles.forEach(button => {
+                button.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    const content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Kenvi Shah | Cybersecurity Specialist</h1>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:skenvi72@gmail.com">skenvi72@gmail.com</a></p>
+            <p>Phone: <a href="tel:+13472854072">+1 (347) 285-4072</a></p>
+            <p><a href="https://www.linkedin.com/in/kenvishah/">LinkedIn Profile</a></p>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Professional Summary</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8;">
+                <strong>Dynamic Cybersecurity Professional</strong> | Driving Innovation and Resilience
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                A highly accomplished Cybersecurity Specialist with over five years of experience in securing complex infrastructures and reducing organizational risk. Adept at leading ISO 27001-compliant initiatives, designing advanced threat detection frameworks, and implementing next-generation security protocols to safeguard critical assets.
+                Recognized for driving a <strong>40% improvement in operational efficiency</strong> and reducing security incidents by <strong>89%</strong> through cutting-edge technologies like Splunk, Qualys, and CyberArk.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                With a proven track record of conducting security audits for 50+ clients, ensuring <strong>100% compliance</strong> with industry standards (GDPR, NIST, HIPAA), and delivering high-impact risk management solutions, I specialize in building resilient systems and fostering cybersecurity awareness. Passionate about empowering teams through engaging ethical hacking workshops and thought leadership, I’ve trained over <strong>150 professionals</strong> on secure coding practices and advanced penetration testing methodologies.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                Leveraging my technical expertise, innovative mindset, and a commitment to excellence, I drive proactive threat management strategies that align with business objectives, creating secure and sustainable digital ecosystems.
+            </p>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Professional Experience</h2>
+            
+            <h3 style="font-size: 1.5rem; color: #1565c0;">Information Security Analyst</h3>
+            <p><strong>IT TEC Solutions Inc.</strong> | <em>July 2024 – Present</em></p>
+            <ul style="padding-left: 1.5rem; list-style-type: disc;">
+                <li>Developed and implemented robust security measures for 2,000+ endpoints, reducing risk exposure by 30%.</li>
+                <li>Optimized threat detection workflows using Splunk, improving response times by 50%.</li>
+                <li>Ensured compliance with ISO 27001 through policy updates, regular audits, and stakeholder engagement.</li>
+                <li>Collaborated with DevOps teams to integrate security in CI/CD pipelines, minimizing vulnerabilities by 40%.</li>
+            </ul>
+            
+            <h3 style="font-size: 1.5rem; color: #1565c0;">Cyber Security Engineer</h3>
+            <p><strong>SecurePoint 360, LLC</strong> | <em>July 2023 – April 2024</em></p>
+            <ul style="padding-left: 1.5rem; list-style-type: disc;">
+                <li>Conducted security audits for 50+ clients, achieving 100% regulatory compliance across industries.</li>
+                <li>Designed and implemented advanced access control systems, reducing unauthorized access incidents by 88%.</li>
+                <li>Trained 300 employees on phishing awareness, reducing incidents by 89% within three months.</li>
+                <li>Automated vulnerability scans using Qualys, saving 20% on operational costs.</li>
+            </ul>
+            
+            <h3 style="font-size: 1.5rem; color: #1565c0;">IT Security Intern</h3>
+            <p><strong>Quest Diagnostics</strong> | <em>June 2022 – August 2022</em></p>
+            <ul style="padding-left: 1.5rem; list-style-type: disc;">
+                <li>Enhanced DLP strategies, reducing potential data leaks by 40% for sensitive information across 5,000+ users.</li>
+                <li>Streamlined incident escalation processes, improving resolution times by 35%.</li>
+                <li>Performed advanced network traffic analysis to detect and neutralize emerging threats.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Projects & Volunteering</h2>
+            
+            <h3 style="font-size: 1.5rem; color: #1565c0;">Rainbow Secure | Cybersecurity Consultant (Volunteer)</h3>
+            <p><strong>Timeline:</strong> March 2021 – July 2021 | <strong>Location:</strong> Mumbai, India</p>
+            <p style="line-height: 1.8;">Collaborated with 30+ small businesses to assess and strengthen their cybersecurity frameworks. Conducted comprehensive risk assessments, identifying vulnerabilities that posed significant threats to operations. Designed and implemented secure authentication systems such as MFA and Single Sign-On (SSO), reducing unauthorized access incidents by 40%. Provided actionable recommendations to enhance security controls and safeguard sensitive data, resulting in a 35% reduction in overall cyber risks.</p>
+            
+            <h3 style="font-size: 1.5rem; color: #1565c0;">Blockchain Security Research</h3>
+            <p><strong>Timeline:</strong> June 2022 – August 2022 | <strong>Location:</strong> Jersey City, NJ</p>
+            <p style="line-height: 1.8;">Led an academic project at Stevens Institute of Technology focusing on identifying vulnerabilities in blockchain infrastructures, particularly in smart contracts. Developed protocols to address key security gaps, minimizing operational risks by 60%. Presented findings to peers and faculty, emphasizing best practices for blockchain security. The project received recognition for its innovative approach to mitigating risks in emerging decentralized technologies.</p>
+            
+            <h3 style="font-size: 1.5rem; color: #1565c0;">Ethical Hacking Workshops</h3>
+            <p><strong>Timeline:</strong> January 2020 – December 2020 | <strong>Location:</strong> Mumbai, India</p>
+            <p style="line-height: 1.8;">Organized and facilitated multiple hands-on workshops aimed at educating professionals and students about ethical hacking and secure coding practices. Trained over 150 participants on tools like Metasploit, Burp Suite, and Wireshark, empowering them to perform penetration testing and identify system vulnerabilities. These workshops contributed to increased awareness and skills in securing networks and applications in real-world scenarios.</p>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Education</h2>
+            <ul style="list-style-type: none; padding-left: 0; line-height: 1.8;">
+                <li><strong>Master of Science in Information Systems</strong> | <em>Stevens Institute of Technology, NJ (2023)</em></li>
+                <li><strong>Bachelor of Science in Computer Engineering</strong> | <em>University of Mumbai, India (2019)</em></li>
+                <li><strong>Specialized Training:</strong> Cybersecurity Analytics, Advanced Threat Detection, Machine Learning Applications</li>
+            </ul>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Core Competencies</h2>
+            <ul style="list-style-type: none; padding-left: 0; line-height: 1.8;">
+                <li><strong>Technical Expertise:</strong> Penetration Testing, Incident Response, Cloud Security (AWS, Azure, GCP)</li>
+                <li><strong>Frameworks:</strong> ISO 27001, GDPR, NIST, HIPAA</li>
+                <li><strong>Tools:</strong> Splunk, Qualys, Nessus, CrowdStrike, CyberArk</li>
+                <li><strong>Programming:</strong> Python, Bash, SQL, PowerShell</li>
+                <li><strong>Leadership:</strong> Cybersecurity Policy Development, Awareness Training</li>
+            </ul>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Certifications</h2>
+            <button class="collapsible" style="background-color: #1565c0; color: white; padding: 0.7rem; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem; margin: 1rem 0;">View Certifications</button>
+            <div class="collapsible-content" style="display: none; margin-top: 1rem;">
+                <ul style="list-style-type: none; padding-left: 1.5rem; line-height: 1.8;">
+                    <li><strong>Certified Ethical Hacker (CEH):</strong> Expertise in penetration testing and ethical hacking practices.</li>
+                    <li><strong>CompTIA Security+:</strong> Knowledge of foundational security practices and risk management.</li>
+                    <li><strong>ISO 27001 Lead Implementer:</strong> Proficient in establishing and maintaining information security management systems.</li>
+                    <li><strong>AWS Certified Security – Specialty:</strong> Advanced cloud security practices on AWS.</li>
+                    <li><strong>Splunk Core Certified User:</strong> Skilled in utilizing Splunk for threat detection and analysis.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Testimonials</h2>
+            <button class="collapsible" style="background-color: #1565c0; color: white; padding: 0.7rem; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem; margin: 1rem 0;">View Testimonials</button>
+            <div class="collapsible-content" style="display: none; margin-top: 1rem;">
+                <div style="background-color: #f1f8ff; padding: 1rem; margin-bottom: 1rem; border-left: 5px solid #1565c0;">
+                    <p>"Kenvi is an exceptional cybersecurity professional who brings both technical expertise and innovative solutions. She has significantly strengthened our organization’s defense mechanisms."</p>
+                    <p style="text-align: right; font-weight: bold;">— Manager, IT TEC Solutions</p>
+                </div>
+                <div style="background-color: #f1f8ff; padding: 1rem; border-left: 5px solid #1565c0;">
+                    <p>"Her training sessions are clear, engaging, and transformative. Kenvi’s ability to demystify complex topics is truly unparalleled."</p>
+                    <p style="text-align: right; font-weight: bold;">— Team Lead, SecurePoint 360</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">GitHub Portfolio</h2>
+            <p style="text-align: center; font-size: 1.1rem; line-height: 1.8;">Explore my projects and contributions showcasing automation scripts, Splunk dashboards, and penetration testing tools.</p>
+            <div style="text-align: center; margin: 2rem;">
+                <a href="https://github.com/yourgithubprofile" target="_blank" class="cta-button" style="background-color: #1565c0; color: white; padding: 0.7rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block;">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub Icon" style="vertical-align: middle; width: 20px; margin-right: 10px;">
+                    Visit My GitHub
+                </a>
+            </div>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Hobbies & Interests</h2>
+            <ul style="list-style-type: none; padding-left: 0; line-height: 1.8;">
+                <li><strong>CTF Challenges:</strong> Regular participation in capture-the-flag events to sharpen ethical hacking skills.</li>
+                <li><strong>Cybersecurity Podcasts:</strong> Engages with industry-leading podcasts like “Darknet Diaries” to stay updated.</li>
+                <li><strong>Coding Projects:</strong> Developing small cybersecurity tools in Python for automation.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Achievements</h2>
+            <ul style="list-style-type: none; padding-left: 0; line-height: 1.8;">
+                <li>Recognized as "Security Innovator" for automating threat detection workflows, reducing manual intervention by 60%.</li>
+                <li>Achieved 100% compliance in regulatory audits for diverse industries, including healthcare and finance.</li>
+                <li>Developed a custom risk assessment tool that improved threat identification accuracy by 40%.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; color: #0d47a1; border-bottom: 2px solid #1565c0; padding-bottom: 0.5rem;">Contact Me</h2>
+            <div style="text-align: center; margin: 2rem;">
+                <a href="mailto:skenvi72@gmail.com" class="cta-button" style="background-color: #1565c0; color: white; padding: 0.7rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block;">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email Icon" style="vertical-align: middle; width: 20px; margin-right: 10px;">
+                    Send an Email
+                </a>
+            </div>
+        </section>
+        <footer>
+            <p style="text-align: center; font-size: 1rem; color: white; background-color: #1565c0; padding: 1rem 0; margin: 0;">
+                &copy; 2025 Kenvi Shah | All rights reserved.
+            </p>
+            <p style="text-align: center; margin: 0;">
+                <a href="https://github.com/yourgithubprofile" target="_blank" style="color: white; text-decoration: none; margin-right: 1rem;">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/kenvishah/" target="_blank" style="color: white; text-decoration: none;">
+                    LinkedIn
+                </a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
